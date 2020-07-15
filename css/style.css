@@ -1,0 +1,499 @@
+@charset "UTF-8";
+/*импорт шривтов*/
+@font-face {
+  font-family: 'Roboto Light';
+  src: url("../fonts/Roboto-Light.eot");
+  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*Импорт цветов*/
+/*Импорт интерфейса*/
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Roboto Light';
+  font-weight: 300;
+}
+
+.container {
+  margin: auto;
+  width: 1185px;
+}
+
+.button {
+  border-radius: 21px;
+  background-color: #ffffff;
+  padding: 13px 36px;
+  text-align: center;
+  color: #2ecc71;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  letter-spacing: 0.72px;
+}
+
+.section {
+  padding: 90px 0 0 0;
+}
+
+.text__title {
+  font-size: 48px;
+  line-height: 60px;
+  font-family: 'Roboto Light';
+  font-weight: 300;
+  color: #5a5a5a;
+  letter-spacing: 1.44px;
+}
+
+.text__title-green {
+  color: #0fd41b;
+  letter-spacing: 1.44px;
+  font-family: 'Roboto Light';
+  font-weight: 300;
+}
+
+.text__subtitle {
+  color: #5a5a5a;
+  font-size: 18px;
+  font-family: 'Roboto Light';
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.54px;
+}
+
+/*Импорт секции navbar*/
+.navbar {
+  background-color: #2ecc71;
+}
+
+.navbar-block {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  padding: 28px 0;
+}
+
+.navbar__menu {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.navbar__link {
+  margin-right: 52px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.72px;
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+/*Импорт секции main*/
+.main {
+  padding-top: 47px;
+  background: url(../img/main/header-bg.png) center no-repeat, #2ecc71;
+  background-size: contain;
+}
+
+.main-block {
+  display: flex;
+}
+
+.main-block__button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.main-text {
+  flex-basis: 60%;
+}
+
+.main-text__appicon {
+  margin-left: -47px;
+}
+
+.main-text__title {
+  color: #f4f4f4;
+  font-size: 64px;
+  line-height: 60px;
+  letter-spacing: 2.56px;
+  font-family: 'Roboto Light';
+  font-weight: 300;
+}
+
+.main-text__title-strong {
+  letter-spacing: 2.56px;
+  font-family: 'Roboto Bold';
+  font-weight: 700;
+}
+
+.main-text__subtitle {
+  display: block;
+  color: #f4f4f4;
+  font-family: Roboto;
+  font-size: 18px;
+  font-family: 'Roboto Light';
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.72px;
+  padding-bottom: 61px;
+}
+
+.main-img {
+  flex-basis: 40%;
+  display: flex;
+  padding-left: 100px;
+}
+
+/*Импорт секции caloriecounter*/
+.caloriecounter-block {
+  display: flex;
+  align-items: center;
+}
+
+.caloriecounter-img {
+  flex-basis: 40%;
+}
+
+.caloriecounter-text {
+  flex-basis: 60%;
+  padding-left: 71px;
+}
+
+.caloriecounter-text__title {
+  margin: 0;
+}
+
+.caloriecounter-text__subtitle {
+  padding: 29px 0 0 0;
+  max-width: 462px;
+  display: block;
+}
+
+/*Импорт секции plandiet*/
+.plandiet {
+  background: url(../img/plandiet/plandiet.png) center bottom no-repeat, #f9f9f9;
+  background-size: contain;
+}
+
+.plandiet-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.plandiet-text {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.plandiet-text__title {
+  margin: 0;
+}
+
+.plandiet-text__subtitle {
+  padding-top: 30px;
+  display: block;
+  max-width: 848px;
+  margin: auto;
+}
+
+.plandiet-img {
+  vertical-align: bottom;
+  width: 100%;
+  display: inline-block;
+}
+
+.plandiet-img__3iphone {
+  display: flex;
+  margin: auto;
+}
+
+/*Импорт секции meattime*/
+.meattime-block {
+  display: flex;
+  align-items: center;
+}
+
+.meattime-text {
+  flex-basis: 50%;
+}
+
+.meattime-text__title {
+  margin: 0;
+}
+
+.meattime-text__subtitle {
+  padding-top: 28px;
+  max-width: 462px;
+  display: block;
+}
+
+.meattime-counter {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  align-items: center;
+}
+
+.counter-add {
+  margin: 28px 0;
+  display: flex;
+  align-items: center;
+  max-width: 421px;
+  box-shadow: 0 0 60px rgba(48, 60, 17, 0.15);
+  border-radius: 8px;
+  border: 1px solid rgba(145, 145, 145, 0.3);
+  background-color: #f9f9f9;
+  padding: 15px 15px;
+}
+
+.counter-add__big {
+  min-width: 525px;
+}
+
+.counter-item {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.counter-item-text {
+  padding-left: 11px;
+}
+
+.counter-item-text__title {
+  margin: 0;
+  color: #2ecc71;
+  font-family: 'Roboto Bold';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 1.12px;
+}
+
+.counter-item-text__title__big {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 1.12px;
+}
+
+.counter-item-text__subtitle {
+  padding: 10px 0 6px 0;
+  display: block;
+  color: #5a5a5a;
+  font-size: 12px;
+  font-family: 'Roboto Light';
+  font-weight: 300;
+  line-height: 16.8px;
+  letter-spacing: 0.88px;
+}
+
+.counter-item-text__subtitle__big {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0.88px;
+}
+
+.counter-item-text__description {
+  align-items: center;
+  display: flex;
+  color: #2ecc71;
+  font-family: 'Roboto Bold';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.88px;
+}
+
+.counter-item-text__description__big {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.88px;
+}
+
+.counter-item-time {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter-item-time__title {
+  margin: 0;
+  color: #b4b4b4;
+  font-family: 'Roboto Bold';
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 1.76px;
+}
+
+.counter-item-time__title__big {
+  color: #2ecc71;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 1.76px;
+}
+
+.counter-item-time__subtitle {
+  color: #b4b4b4;
+  font-size: 16px;
+  font-family: 'Roboto Bold';
+  font-weight: 700;
+  letter-spacing: 1.12px;
+  margin-left: auto;
+  display: inline-block;
+}
+
+.description-calorie::before {
+  content: "";
+  background-color: #b4b4b4;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 13px;
+}
+
+.description-calorie, .description-gram {
+  display: inline-block;
+}
+
+/**ПО центру карточка*/
+.big {
+  min-width: 525px;
+  min-width-box-shadow: 0 0 60px rgba(48, 60, 17, 0.15);
+  min-width-border-radius: 8px;
+  min-width-border: 1px solid rgba(145, 145, 145, 0.3);
+  min-width-background-color: #f9f9f9;
+  min-width-padding: 15px 15px;
+}
+
+.big-item {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.big-item-text {
+  padding-left: 11px;
+}
+
+.big-item-text__title {
+  margin: 0;
+  color: #2ecc71;
+  font-family: 'Roboto Bold';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 1.12px;
+}
+
+.big-item-text__subtitle {
+  padding: 10px 0 6px 0;
+  display: block;
+  color: #5a5a5a;
+  font-size: 12px;
+  font-family: 'Roboto Light';
+  font-weight: 300;
+  line-height: 16.8px;
+  letter-spacing: 0.88px;
+}
+
+.big-item-text__description {
+  align-items: center;
+  display: flex;
+  color: #2ecc71;
+  font-family: 'Roboto Bold';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.88px;
+}
+
+.big-item-time {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-item-time__title {
+  margin: 0;
+  color: #b4b4b4;
+  font-family: 'Roboto Bold';
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 1.76px;
+}
+
+.big-item-time__subtitle {
+  color: #b4b4b4;
+  font-size: 16px;
+  font-family: 'Roboto Bold';
+  font-weight: 700;
+  letter-spacing: 1.12px;
+  margin-left: auto;
+  display: inline-block;
+}
+
+/**ПО центру карточка*/
+/*Импорт секции footer*/
+.footer {
+  background: url(../img/footer/footer-bg.png) center bottom no-repeat, #2ecc71;
+  background-size: contain;
+  padding-bottom: 100px;
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-block__title {
+  color: #ffffff;
+  font-family: 'Roboto Light';
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 300;
+  letter-spacing: 1.44px;
+}
+
+.footer-block__subtitle {
+  text-align: center;
+  display: block;
+  color: #ffffff;
+  font-family: 'Roboto Light';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.54px;
+}
+
+.footer__button {
+  padding: 13px 85px;
+  margin-top: 60px;
+}
+/*# sourceMappingURL=style.css.map */

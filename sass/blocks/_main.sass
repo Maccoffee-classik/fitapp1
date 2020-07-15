@@ -1,0 +1,38 @@
+.main
+	padding-top: 47px
+	background: url(../img/main/header-bg.png) center no-repeat,#2ecc71
+	background-size: contain
+	&-block
+		display: flex
+		&__button
+			background: none
+			border: none
+			padding: 0
+			margin-right: 30px
+	&-text
+		flex-basis: 60%
+		&__appicon
+			margin-left: -47px
+		&__title
+			color: $text-color
+			font-size: 64px
+			line-height: 60px			
+			letter-spacing: 2.56px
+			+reg
+			&-strong
+				letter-spacing: 2.56px
+				+bold
+		&__subtitle
+			display: block
+			color: $text-color
+			font-family: Roboto
+			font-size: 18px
+			+reg
+			line-height: 32px
+			letter-spacing: 0.72px
+			padding-bottom: 61px
+	&-img
+		flex-basis: 40%
+		display: flex
+		padding-left: 100px
+	

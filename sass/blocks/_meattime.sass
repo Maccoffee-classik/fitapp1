@@ -1,0 +1,168 @@
+.meattime
+	&-block
+		display: flex
+		align-items: center
+	&-text
+		flex-basis: 50%
+		&__title
+			margin: 0
+		&__subtitle
+			padding-top: 28px
+			max-width: 462px
+			display: block
+	&-counter
+		display: flex
+		flex-direction: column
+		flex-basis: 50%
+		align-items: center
+			
+.counter
+	&-add
+		margin: 28px 0
+		display: flex
+		align-items: center
+		max-width: 421px
+		box-shadow: 0 0 60px rgba(48, 60, 17, 0.15)
+		border-radius: 8px
+		border: 1px solid rgba(145, 145, 145, 0.3)
+		background-color: #f9f9f9
+		padding: 15px 15px
+		&__big
+			min-width: 525px
+
+	&-item
+		display: flex
+		justify-content: space-around
+		width: 100%
+		&-text
+			padding-left: 11px
+			&__title
+				margin: 0
+				color: $text-color-green
+				+bold
+				font-size: 16px
+				line-height: 22.4px
+				letter-spacing: 1.12px
+				&__big
+					font-size: 20px
+					font-weight: 700
+					line-height: 28px
+					letter-spacing: 1.12px
+			&__subtitle
+				padding: 10px 0 6px 0
+				display: block
+				color: $text-color-title
+				font-size: 12px
+				+reg
+				line-height: 16.8px
+				letter-spacing: 0.88px
+				&__big
+					font-size: 15px
+					font-weight: 300
+					line-height: 21px
+					letter-spacing: 0.88px
+			&__description
+				align-items: center
+				display: flex
+				
+				color: $text-color-green
+				+bold
+				font-size: 12px
+				line-height: 22px
+				letter-spacing: 0.88px
+				&__big
+					font-size: 15px
+					font-weight: 700
+					line-height: 28px
+					letter-spacing: 0.88px
+		&-time
+			display: flex
+			flex-direction: column
+			&__title
+				margin: 0
+				color: #b4b4b4
+				+bold
+				font-size: 25px
+				&__big
+					color: $text-color-green
+					font-size: 31px
+					font-weight: 700
+					line-height: 42px
+					letter-spacing: 1.76px
+				
+				letter-spacing: 1.76px
+			&__subtitle
+				color: #b4b4b4
+				font-size: 16px
+				+bold				
+				letter-spacing: 1.12px
+				margin-left: auto		
+				display: inline-block		
+.description-calorie
+	&::before
+		content: ""
+		background-color: #b4b4b4
+		width: 5px
+		height: 5px
+		border-radius: 50%
+		display: inline-block
+		vertical-align: middle
+		margin: 0 13px
+.description-calorie, .description-gram
+	display: inline-block
+/**ПО центру карточка*/
+.big
+	min-width: 525px
+		box-shadow: 0 0 60px rgba(48, 60, 17, 0.15)
+		border-radius: 8px
+		border: 1px solid rgba(145, 145, 145, 0.3)
+		background-color: #f9f9f9
+		padding: 15px 15px
+	&-item
+		display: flex
+		justify-content: space-around
+		width: 100%
+		&-text
+			padding-left: 11px
+			&__title
+				margin: 0
+				color: $text-color-green
+				+bold
+				font-size: 16px
+				line-height: 22.4px
+				letter-spacing: 1.12px
+			&__subtitle
+				padding: 10px 0 6px 0
+				display: block
+				color: $text-color-title
+				font-size: 12px
+				+reg
+				line-height: 16.8px
+				letter-spacing: 0.88px
+			&__description
+				align-items: center
+				display: flex
+				
+				color: $text-color-green
+				+bold
+				font-size: 15px
+				line-height: 28px
+				letter-spacing: 0.88px
+		&-time
+			display: flex
+			flex-direction: column
+			&__title
+				margin: 0
+				color: #b4b4b4
+				+bold
+				font-size: 25px
+				
+				letter-spacing: 1.76px
+			&__subtitle
+				color: #b4b4b4
+				font-size: 16px
+				+bold				
+				letter-spacing: 1.12px
+				margin-left: auto		
+				display: inline-block		
+/**ПО центру карточка*/
